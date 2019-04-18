@@ -1,0 +1,4 @@
+build a gem that accomplishes the following:
+    1. scrapes data from a website url in this case it will be 
+    2. uses that data to generate referencable objects
+    3.  

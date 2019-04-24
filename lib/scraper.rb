@@ -28,10 +28,20 @@ class Scraper
             html = open(SRC + recipe.url)
             doc = Nokogiri::HTML(html)
             recipe.author = doc.css(".byline-name").text.strip
-            recipe.yield = doc.css(".recipe-yield-value").first.text.strip
-            recipe.time = doc.css(".recipe-yield-value")[1].text.strip
+
+            if doc.css(".recipe-yield-value").length == 0
+                recipe.yield = nil
+                recipe.time = nil
+            else
+                recipe.yield = doc.css(".recipe-yield-value").first.text.strip
+                recipe.time = doc.css(".recipe-yield-value")[1].text.strip
+            end 
+
             recipe.intro = doc.css(".topnote p").first.text.strip
-            recipe.tags = doc.css("p.tag-block a").collect{|tag| tag.text}
+
+            recipe.tags = doc.css(".tags-nutrition-container").collect{ |tag|    
+                tag.text.strip
+            }
             recipe.steps = doc.css("ol.recipe-steps li").collect{ |step|
                 step.text
             }
@@ -62,9 +72,5 @@ class Scraper
 
             recipe.ingredients = ingredientsArray if ingredientsArray.size == 1
         end
-        
-        # def self.recipes 
-        #     puts @recipeUrls.collect{|r| r.match(/-.*/).to_s.gsub(/-/, ' ').strip}
-        # end
     end
 end

@@ -1,10 +1,16 @@
-# Project Title
+# Recipe Scraper CLI
 
-One Paragraph of project description goes here
+Command line interface for scraping recipes from a website built in Ruby. It uses two Ruby gems: Nokogiri and OpenURI to accomplish the scraping.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Clone the repo to your local environment.
+
+In terminal, type the following command to run the program.
+
+```
+ruby bin/recipe-cli
+```
 
 ### Prerequisites
 
@@ -44,23 +50,10 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [Nokogiri](https://nokogiri.org/) - HTML, XML, SAX, and Reader parser.
+- [Open URI](https://ruby-doc.org/stdlib-2.1.0/libdoc/open-uri/rdoc/OpenURI.html) - An easy-to-use wrapper for Net::HTTP, Net::HTTPS and Net::FTP
 
 ## Contributing
 
@@ -68,11 +61,11 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+- **DARRENDAZ** - _Initial work_ - [DARRENDAZ]https://github.com/darrendaz/
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -82,7 +75,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc

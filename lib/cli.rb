@@ -39,12 +39,12 @@ class Cli
                 if recipe.yield
                     puts "Makes #{recipe.yield}"
                 else
-                    puts "This is a no-recpe recipe so it will make as much as you want."
+                    puts "This is a no-recipe recipe so it will make as much as you want."
                 end
                 if recipe.time
                     puts "Takes approximately #{recipe.time} to make."
                 else
-                    puts "This is a no-recpe recipe so it will take as long as you want."
+                    puts "This is a no-recipe recipe so it will take as long as you want."
                 end
                 puts "Intro: #{recipe.intro}"
                 puts "Ingredients: #{recipe.ingredients}"

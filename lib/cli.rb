@@ -1,4 +1,4 @@
-# require "pry"
+require "pry"
 
 class Cli
     def run
@@ -21,6 +21,7 @@ class Cli
         if input == "exit"
             puts "Until next time my friend!"
         else
+            # binding.pry
             recipe = Recipe.all[input.to_i - 1]
 
             if !recipe
@@ -34,8 +35,17 @@ class Cli
                 
                 puts "#{recipe.name}"
                 puts "By #{recipe.author}"
-                puts "Makes #{recipe.yield}"
-                puts "Takes approximately #{recipe.time} to make."
+                
+                if recipe.yield
+                    puts "Makes #{recipe.yield}"
+                else
+                    puts "This is a no-recipe recipe so it will make as much as you want."
+                end
+                if recipe.time
+                    puts "Takes approximately #{recipe.time} to make."
+                else
+                    puts "This is a no-recipe recipe so it will take as long as you want."
+                end
                 puts "Intro: #{recipe.intro}"
                 puts "Ingredients: #{recipe.ingredients}"
                 puts "Steps: "

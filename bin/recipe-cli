@@ -1,5 +1,5 @@
-require_relative "../lib/cli.rb"
-require_relative "../lib/scraper.rb"
-require_relative "../lib/recipe.rb"
+require_relative "../app/cli.rb"
+require_relative "../app/scraper.rb"
+require_relative "../app/recipe.rb"
 
 Cli.new.run

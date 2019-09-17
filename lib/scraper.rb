@@ -6,11 +6,11 @@ class Scraper
     SRC = "https://cooking.nytimes.com"
     
     def self.scrape
-        totalPages = 4
+        numberOfPages = 4
         pageNum = 1
         
-        while pageNum <= totalPages do
-            puts "scraping (#{pageNum} / #{totalPages})"
+        while pageNum <= numberOfPages do
+            puts "scraping (#{pageNum} / #{numberOfPages})"
             target = SRC + "/search?q=&page=" + "#{pageNum}"
             html = open(target)
             doc = Nokogiri::HTML(html)

@@ -23,14 +23,6 @@ Have fun!
 - [Nokogiri](https://nokogiri.org/) - HTML, XML, SAX, and Reader parser.
 - [Open URI](https://ruby-doc.org/stdlib-2.1.0/libdoc/open-uri/rdoc/OpenURI.html) - An easy-to-use wrapper for Net::HTTP, Net::HTTPS and Net::FTP
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
 ## Authors
 
 - **DARRENDAZ** - _Initial work_ - [DARRENDAZ]https://github.com/darrendaz/

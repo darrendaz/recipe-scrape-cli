@@ -14,7 +14,7 @@ ruby bin/recipe-cli
 
 You will be prompted to enter a recipe number from the list to view the details of that recipe.
 
-Hit enter after typing in the recipe number and the recipe will be output to the terminal.
+Hit `enter` key after typing in the recipe number and the recipe will be output to the terminal.
 
 Have fun!
 
